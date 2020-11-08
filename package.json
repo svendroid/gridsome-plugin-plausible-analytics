@@ -1,0 +1,25 @@
+{
+  "name": "gridsome-plugin-plausible-analytics",
+  "version": "0.0.1",
+  "description": "Plausible Analytics plugin for Gridsome",
+  "main": "gridsome.client.js",
+  "keywords": [
+    "gridsome",
+    "gridsome-plugin",
+    "plausible"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/svendroid/gridsome-plugin-plausible-analytics.git"
+  },
+  "author": {
+    "name": "Sven Adolph",
+    "url": "https://svenadolph.net"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/svendroid/gridsome-plugin-plausible-analytics/issues"
+  },
+  "homepage": "https://github.com/svendroid/gridsome-plugin-plausible-analytics#readme"
+}
