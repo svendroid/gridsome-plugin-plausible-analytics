@@ -8,7 +8,11 @@
     "gridsome-plugin",
     "plausible"
   ],
-  "scripts": {},
+  "scripts": {
+    "release:major": "npm version major && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:patch": "npm version patch && npm publish"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/svendroid/gridsome-plugin-plausible-analytics.git"
