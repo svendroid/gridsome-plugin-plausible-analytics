@@ -5,7 +5,7 @@ export default function (Vue, options, context) {
     }
 
     context.head.script.push({
-        "src": "https://plausible.io/js/plausible.js",
+        "src": options.outboundLinkTracking ? "https://plausible.io/js/plausible.outbound-links.js" : "https://plausible.io/js/plausible.js",
         "async": true,
         "defer": true,
         "data-domain": options.dataDomain

@@ -17,7 +17,8 @@ module.exports = {
     {
       use: 'gridsome-plugin-plausible-analytics',
       options: {
-        dataDomain: 'blog.example.com' //required
+        dataDomain: 'blog.example.com',
+        outboundLinkTracking: false
       }
     }
   ]
@@ -32,3 +33,11 @@ module.exports = {
 - Default: None, field is required
 
 Domain you entered on plausible.io e.g. blog.example.com.
+
+#### outboundLinkTracking
+
+- Type: `boolean`
+- Default: `false`
+
+Use [Outbound Link Click Tracking](https://docs.plausible.io/outbound-link-click-tracking).
+You also need to activate it in your Account. See Step 2 on https://docs.plausible.io/outbound-link-click-tracking#step-2-create-a-custom-event-goal-in-your-plausible-analytics-account.
