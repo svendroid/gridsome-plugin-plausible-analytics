@@ -34,10 +34,17 @@ module.exports = {
 
 Domain you entered on plausible.io e.g. blog.example.com.
 
-#### outboundLinkTracking
+#### outboundLinkTracking (optional)
 
 - Type: `boolean`
 - Default: `false`
 
 Use [Outbound Link Click Tracking](https://docs.plausible.io/outbound-link-click-tracking).
 You also need to activate it in your Account. See Step 2 on https://docs.plausible.io/outbound-link-click-tracking#step-2-create-a-custom-event-goal-in-your-plausible-analytics-account.
+
+#### customDomain (optional)
+
+- Type: 'String'
+- Default: None
+
+Custom domain you set up on plausible.io to serve the js-snippet e.g. `stats.[yourdomain].com` (see https://docs.plausible.io/custom-domain)
