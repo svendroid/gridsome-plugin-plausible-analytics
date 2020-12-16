@@ -1,3 +1,12 @@
+<p>
+  <a title="Total downloads" href="https://www.npmjs.com/package/gridsome-plugin-plausible-analytics">
+    <img src="https://img.shields.io/npm/dt/gridsome-plugin-plausible-analytics">
+  </a>
+  <a title="Current version" href="https://www.npmjs.com/package/gridsome-plugin-plausible-analytics">
+    <img src="https://img.shields.io/npm/v/gridsome-plugin-plausible-analytics?color=%23cb3837">
+  </a>
+</p>
+
 # gridsome-plugin-plausible-analytics
 
 Adds plausible analytics to your gridsome site.
