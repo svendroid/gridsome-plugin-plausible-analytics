@@ -4,23 +4,21 @@ export default function (Vue, options, context) {
         return;
     }
 
-    if (options.excludeRoutes && typeof options.excludeRoutes !== 'string' && !Array.isArray(options.excludeRoutes)) {
-      console.error("If supplied, excludeRoutes has to be a String or Array of routes to exclude.");
+    if (options.excludePages && !Array.isArray(options.excludePages)) {
+      console.error("If supplied, excludePages has to be an array of pages to exclude.");
       return;
     }
 
     var host = options.customDomain ? options.customDomain : "plausible.io";
     var postfix = '';
-    var excludeRoutes;
+    var excludePages;
     var filename;
 
-    if (options.excludeRoutes && Array.isArray(options.excludeRoutes)) {
-      excludeRoutes = options.excludeRoutes.join(', ');
-    } else if (options.excludeRoutes) {
-      excludeRoutes = options.excludeRoutes;
+    if (options.excludePages && options.excludePages.length > 0) {
+      excludePages = options.excludePages.join(', ');
     }
 
-    if (excludeRoutes) postfix += '.exclusions';
+    if (excludePages) postfix += '.exclusions';
     if (options.outboundLinkTracking) postfix += '.outbound-links';
     postfix += '.js';
 
@@ -37,8 +35,8 @@ export default function (Vue, options, context) {
         "data-domain": options.dataDomain
     };
 
-    if (excludeRoutes) {
-      script["data-exclude"] = excludeRoutes;
+    if (excludePages) {
+      script["data-exclude"] = excludePages;
     }
 
     context.head.script.push(script);

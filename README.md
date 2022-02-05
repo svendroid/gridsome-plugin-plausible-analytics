@@ -43,12 +43,12 @@ module.exports = {
 
 Domain you entered on plausible.io e.g. blog.example.com.
 
-#### excludeRoutes (optional)
+#### excludePages (optional)
 
-- Type: `String` or `Array[String]`
+- Type: `Array[String]`
 - Default: None
 
-Do not track visits to the listed routes. Can either be a comma-separated string of routes, or an array of strings, each representing a route to ignore.
+Do not track visits to the listed pages. Should be an array of strings, each representing a page to ignore.
 For more information, check [Excluding Pages on Plausible](https://plausible.io/docs/excluding-pages).
 
 #### outboundLinkTracking (optional)
