@@ -48,7 +48,7 @@ Domain you entered on plausible.io e.g. blog.example.com.
 - Type: `Array[String]`
 - Default: None
 
-Do not track visits to the listed pages. Should be an array of strings, each representing a page to ignore. e.g. `["/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"]`
+Do not track visits to the listed pages. Should be an array of strings, each representing a page to ignore. e.g. `["/blog4", "/rule/*", "/how-to-*", "/*/admin", "/*/priv/*", "/more-paths-here"]`
 For more information, check [Excluding Pages on Plausible](https://plausible.io/docs/excluding-pages).
 
 #### outboundLinkTracking (optional)
