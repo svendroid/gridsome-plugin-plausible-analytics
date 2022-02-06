@@ -48,7 +48,7 @@ Domain you entered on plausible.io e.g. blog.example.com.
 - Type: `Array[String]`
 - Default: None
 
-Do not track visits to the listed pages. Should be an array of strings, each representing a page to ignore.
+Do not track visits to the listed pages. Should be an array of strings, each representing a page to ignore. e.g. `["/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"]`
 For more information, check [Excluding Pages on Plausible](https://plausible.io/docs/excluding-pages).
 
 #### outboundLinkTracking (optional)
@@ -61,7 +61,11 @@ You also need to activate it in your Account. See Step 2 on https://docs.plausib
 
 #### customDomain (optional)
 
-- Type: 'String'
+- Type: `String`
 - Default: None
 
 Custom domain you set up on plausible.io to serve the js-snippet e.g. `stats.[yourdomain].com` (see https://docs.plausible.io/custom-domain)
+
+## Development notes
+
+- Testing plugin, see https://gridsome.org/docs/how-to-create-a-plugin/#testing-your-plugin
