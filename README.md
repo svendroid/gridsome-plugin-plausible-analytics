@@ -68,4 +68,15 @@ Custom domain you set up on plausible.io to serve the js-snippet e.g. `stats.[yo
 
 ## Development notes
 
-- Testing plugin, see https://gridsome.org/docs/how-to-create-a-plugin/#testing-your-plugin
+
+- Testing Plugin
+  1. [Create a new Gridsome project](/docs/#2-create-a-gridsome-project) (if you don't want to test with an existing one)
+  2. Open a terminal in your plugin project directory
+  3. `npm link` or `yarn link`
+  4. Open a terminal in your Gridsome project
+  5. `npm link my-plugin-name` or `yarn link my-plugin-name`
+  6. `gridsome develop`
+  7. After testing:
+     * First in project: `npm unlink --no-save cowabunga`
+     * Second in plugin: `npm unlink`
+  - Source: https://gridsome.org/docs/how-to-create-a-plugin/#testing-your-plugin
