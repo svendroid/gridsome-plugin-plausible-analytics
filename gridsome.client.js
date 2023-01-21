@@ -22,11 +22,7 @@ export default function (Vue, options, context) {
     if (options.outboundLinkTracking) postfix += '.outbound-links';
     postfix += '.js';
 
-    if (options.customDomain) {
-        filename = 'index' + postfix;
-    } else {
-        filename = 'plausible' + postfix;
-    }
+    filename = 'script' + postfix;
 
     var script = {
         "src": "https://" + host + "/js/" + filename,
